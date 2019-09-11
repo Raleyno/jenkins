@@ -6,12 +6,8 @@
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
-  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:user</permission>
-    <permission>hudson.model.Hudson.Administer:bnb</permission>
-    <permission>hudson.model.Hudson.Read:user</permission>
-    <permission>hudson.model.Item.Read:user</permission>
-    <permission>hudson.model.View.Read:user</permission>
+  <authorizationStrategy class="hudson.security.FullControlOnceLoggedInAuthorizationStrategy">
+    <denyAnonymousReadAccess>false</denyAnonymousReadAccess>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>false</disableSignup>

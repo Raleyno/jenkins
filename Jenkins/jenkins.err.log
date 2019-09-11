@@ -5782,3 +5782,55 @@ INFO: Helloci-slave #1 main build action completed: FAILURE
 INFO: Helloci-slave #2 main build action completed: FAILURE
 сен 11, 2019 10:50:11 PM hudson.model.Run execute
 INFO: Helloci-slave #3 main build action completed: FAILURE
+сен 11, 2019 11:51:30 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@1959d85: display name [Root WebApplicationContext]; startup date [Wed Sep 11 23:51:30 GMT+03:00 2019]; root of context hierarchy
+сен 11, 2019 11:51:30 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@1959d85]: org.springframework.beans.factory.support.DefaultListableBeanFactory@12ae119
+сен 11, 2019 11:51:30 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@12ae119: defining beans [authenticationManager]; root of factory hierarchy
+сен 11, 2019 11:51:31 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@7fc8cb: display name [Root WebApplicationContext]; startup date [Wed Sep 11 23:51:31 GMT+03:00 2019]; root of context hierarchy
+сен 11, 2019 11:51:31 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@7fc8cb]: org.springframework.beans.factory.support.DefaultListableBeanFactory@ce2a8c
+сен 11, 2019 11:51:31 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ce2a8c: defining beans [filter,legacy]; root of factory hierarchy
+сен 11, 2019 11:57:31 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Matrix Authorization Strategy on behalf of bnb
+сен 11, 2019 11:57:33 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Matrix Authorization Strategy
+сен 11, 2019 11:57:33 PM hudson.PluginManager dynamicLoad
+INFO: Attempting to dynamic load E:\data\Jenkins\plugins\matrix-auth.jpi
+сен 11, 2019 11:57:38 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+сен 11, 2019 11:57:38 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+сен 11, 2019 11:57:38 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+сен 11, 2019 11:57:38 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+сен 11, 2019 11:57:38 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+сен 11, 2019 11:57:38 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+сен 11, 2019 11:57:38 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+сен 11, 2019 11:57:39 PM hudson.PluginManager dynamicLoad
+INFO: Plugin matrix-auth:2.4.2 dynamically installed
+сен 11, 2019 11:57:39 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Installation successful: Matrix Authorization Strategy
+сен 11, 2019 11:59:32 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@fbda2c: display name [Root WebApplicationContext]; startup date [Wed Sep 11 23:59:32 GMT+03:00 2019]; root of context hierarchy
+сен 11, 2019 11:59:32 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@fbda2c]: org.springframework.beans.factory.support.DefaultListableBeanFactory@16b6fba
+сен 11, 2019 11:59:32 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16b6fba: defining beans [authenticationManager]; root of factory hierarchy
+сен 11, 2019 11:59:33 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@1203aca: display name [Root WebApplicationContext]; startup date [Wed Sep 11 23:59:33 GMT+03:00 2019]; root of context hierarchy
+сен 11, 2019 11:59:33 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@1203aca]: org.springframework.beans.factory.support.DefaultListableBeanFactory@12a202a
+сен 11, 2019 11:59:33 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@12a202a: defining beans [filter,legacy]; root of factory hierarchy
+сен 12, 2019 12:00:42 AM org.jvnet.hudson.plugins.thinbackup.backup.HudsonBackup <init>
+INFO: No previous full backup found, thus creating one.
+сен 12, 2019 12:00:42 AM org.jvnet.hudson.plugins.thinbackup.backup.HudsonBackup backupJobsDirectory
+INFO: Found 2 jobs to back up.
