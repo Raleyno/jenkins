@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-09-11 19:35:52.414 UTC</timestamp>
+  <original>
+    <name>Helloci-slave</name>
+    <number>1</number>
+  </original>
+  <md5sum>b3f6bbc5868634d8941614c5f170f2d1</md5sum>
+  <fileName>com.github.vitalliuss.helloci.AppTest.txt</fileName>
+  <usages>
+    <entry>
+      <string>Helloci-slave</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

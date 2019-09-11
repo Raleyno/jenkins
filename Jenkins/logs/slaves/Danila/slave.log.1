@@ -1,0 +1,48 @@
+SSHLauncher{host='localhost', port=22, credentialsId='84bb9c81-14a9-49b2-a99c-9da9e3e03826', jvmOptions='', javaPath='', prefixStartSlaveCmd='', suffixStartSlaveCmd='', launchTimeoutSeconds=210, maxNumRetries=10, retryWaitTime=15, sshHostKeyVerificationStrategy=hudson.plugins.sshslaves.verifiers.KnownHostsFileKeyVerificationStrategy, tcpNoDelay=true, trackCredentials=true}
+[09/11/19 21:15:13] [SSH] Opening SSH connection to localhost:22.
+Connection refused: connect
+SSH Connection failed with IOException: "Connection refused: connect", retrying in 15 seconds.  There are 10 more retries left.
+Connection refused: connect
+SSH Connection failed with IOException: "Connection refused: connect", retrying in 15 seconds.  There are 9 more retries left.
+Connection refused: connect
+SSH Connection failed with IOException: "Connection refused: connect", retrying in 15 seconds.  There are 8 more retries left.
+Connection refused: connect
+SSH Connection failed with IOException: "Connection refused: connect", retrying in 15 seconds.  There are 7 more retries left.
+Connection refused: connect
+SSH Connection failed with IOException: "Connection refused: connect", retrying in 15 seconds.  There are 6 more retries left.
+Connection refused: connect
+SSH Connection failed with IOException: "Connection refused: connect", retrying in 15 seconds.  There are 5 more retries left.
+Connection refused: connect
+SSH Connection failed with IOException: "Connection refused: connect", retrying in 15 seconds.  There are 4 more retries left.
+Connection refused: connect
+SSH Connection failed with IOException: "Connection refused: connect", retrying in 15 seconds.  There are 3 more retries left.
+Connection refused: connect
+SSH Connection failed with IOException: "Connection refused: connect", retrying in 15 seconds.  There are 2 more retries left.
+Connection refused: connect
+SSH Connection failed with IOException: "Connection refused: connect", retrying in 15 seconds.  There are 1 more retries left.
+Connection refused: connect
+SSH Connection failed with IOException: "Connection refused: connect".
+java.io.IOException: There was a problem while connecting to localhost:22
+	at com.trilead.ssh2.Connection.connect(Connection.java:758)
+	at hudson.plugins.sshslaves.SSHLauncher.openConnection(SSHLauncher.java:817)
+	at hudson.plugins.sshslaves.SSHLauncher$1.call(SSHLauncher.java:419)
+	at hudson.plugins.sshslaves.SSHLauncher$1.call(SSHLauncher.java:406)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.trilead.ssh2.transport.TransportManager.establishConnection(TransportManager.java:367)
+	at com.trilead.ssh2.transport.TransportManager.initialize(TransportManager.java:480)
+	at com.trilead.ssh2.Connection.connect(Connection.java:698)
+	... 7 more
+[09/11/19 21:17:54] Launch failed - cleaning up connection
+[09/11/19 21:17:54] [SSH] Connection closed.

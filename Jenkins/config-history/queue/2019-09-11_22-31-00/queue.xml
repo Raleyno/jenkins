@@ -1,0 +1,29 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.model.Queue_-State>
+  <counter>1</counter>
+  <items>
+    <hudson.model.Queue_-BuildableItem>
+      <actions>
+        <hudson.model.CauseAction>
+          <causeBag class="linked-hash-map">
+            <entry>
+              <hudson.triggers.SCMTrigger_-SCMTriggerCause>
+                <pollingLog>Started on 11.09.2019 22:30:00&#xd;
+No existing build. Scheduling a new one.&#xd;
+Done. Took 1 ms&#xd;
+Changes found&#xd;
+</pollingLog>
+              </hudson.triggers.SCMTrigger_-SCMTriggerCause>
+              <int>1</int>
+            </entry>
+          </causeBag>
+        </hudson.model.CauseAction>
+      </actions>
+      <id>1</id>
+      <task class="hudson.model.FreeStyleProject">Helloci-slave</task>
+      <inQueueSince>1568230200565</inQueueSince>
+      <buildableStartMilliseconds>1568230206437</buildableStartMilliseconds>
+      <isPending>false</isPending>
+    </hudson.model.Queue_-BuildableItem>
+  </items>
+</hudson.model.Queue_-State>

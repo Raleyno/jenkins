@@ -1,0 +1,31 @@
+сен 11, 2019 9:32:03 PM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: Danila
+сен 11, 2019 9:32:03 PM hudson.remoting.jnlp.Main$CuiListener <init>
+INFO: Jenkins agent is running in headless mode.
+сен 11, 2019 9:32:03 PM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 3.29
+сен 11, 2019 9:32:03 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using e:\data\Slave\remoting as a remoting work directory
+сен 11, 2019 9:32:05 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8080/, http://localhost:8081/]
+сен 11, 2019 9:32:06 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+сен 11, 2019 9:32:06 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: localhost
+  Agent port:    2882
+  Identity:      5a:19:e4:7f:56:f6:f8:58:e7:15:0e:ac:ec:bf:25:22
+сен 11, 2019 9:32:06 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+сен 11, 2019 9:32:06 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to localhost:2882
+сен 11, 2019 9:32:06 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+сен 11, 2019 9:32:07 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 5a:19:e4:7f:56:f6:f8:58:e7:15:0e:ac:ec:bf:25:22
+сен 11, 2019 9:32:10 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
+сен 11, 2019 10:35:08 PM org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+WARNING: Attempt to (de-)serialize anonymous class org.jenkinsci.plugins.gitclient.Git$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+сен 11, 2019 10:35:13 PM org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+WARNING: Attempt to (de-)serialize anonymous class org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
