@@ -2710,3 +2710,1324 @@ INFO: helloci-jenkins #2 main build action completed: FAILURE
 INFO: helloci-jenkins #3 main build action completed: FAILURE
 сен 11, 2019 2:34:09 AM hudson.model.Run execute
 INFO: helloci-jenkins #4 main build action completed: FAILURE
+сен 11, 2019 2:46:29 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@25538299 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f7a37f76-e36f-4df5-a54d-5b6e588bf725.local. ttl: '58/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:46:29 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '3099/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '3094/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '3096/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '3096/3600' text: 'path=/version=2...']
+		
+		name 'f7a37f76-e36f-4df5-a54d-5b6e588bf725.local.' 
+			[IPv6Address@25538299 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f7a37f76-e36f-4df5-a54d-5b6e588bf725.local. ttl: '58/120' address: '0.0.0.0']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '3099/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '3099/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '3102/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '3102/3600' text: 'path=/version=2...']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '3102/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '70d5b935-881b-467a-a826-5050a0cf1807.local.' 
+			[IPv4Address@15345407 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 70d5b935-881b-467a-a826-5050a0cf1807.local. ttl: '56/120' address: '192.168.0.12']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '3096/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:46:39 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@25538299 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f7a37f76-e36f-4df5-a54d-5b6e588bf725.local. ttl: '48/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:46:39 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '3089/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '3084/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '3086/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '3086/3600' text: 'path=/version=2...']
+		
+		name 'f7a37f76-e36f-4df5-a54d-5b6e588bf725.local.' 
+			[IPv6Address@25538299 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f7a37f76-e36f-4df5-a54d-5b6e588bf725.local. ttl: '48/120' address: '0.0.0.0']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '3089/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '3089/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '3092/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '3092/3600' text: 'path=/version=2...']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '3092/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '70d5b935-881b-467a-a826-5050a0cf1807.local.' 
+			[IPv4Address@15345407 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 70d5b935-881b-467a-a826-5050a0cf1807.local. ttl: '46/120' address: '192.168.0.12']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '3086/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:46:49 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@25538299 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f7a37f76-e36f-4df5-a54d-5b6e588bf725.local. ttl: '38/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:46:49 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '3079/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '3074/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '3076/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '3076/3600' text: 'path=/version=2...']
+		
+		name 'f7a37f76-e36f-4df5-a54d-5b6e588bf725.local.' 
+			[IPv6Address@25538299 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f7a37f76-e36f-4df5-a54d-5b6e588bf725.local. ttl: '38/120' address: '0.0.0.0']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '3079/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '3079/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '3082/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '3082/3600' text: 'path=/version=2...']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '3082/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '70d5b935-881b-467a-a826-5050a0cf1807.local.' 
+			[IPv4Address@15345407 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 70d5b935-881b-467a-a826-5050a0cf1807.local. ttl: '36/120' address: '192.168.0.12']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '3076/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:46:59 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@25538299 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f7a37f76-e36f-4df5-a54d-5b6e588bf725.local. ttl: '28/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:46:59 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '3069/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '3064/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '3066/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '3066/3600' text: 'path=/version=2...']
+		
+		name 'f7a37f76-e36f-4df5-a54d-5b6e588bf725.local.' 
+			[IPv6Address@25538299 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f7a37f76-e36f-4df5-a54d-5b6e588bf725.local. ttl: '28/120' address: '0.0.0.0']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '3069/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '3069/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '3072/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '3072/3600' text: 'path=/version=2...']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '3072/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '70d5b935-881b-467a-a826-5050a0cf1807.local.' 
+			[IPv4Address@15345407 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 70d5b935-881b-467a-a826-5050a0cf1807.local. ttl: '26/120' address: '192.168.0.12']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '3066/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:47:09 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@25538299 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f7a37f76-e36f-4df5-a54d-5b6e588bf725.local. ttl: '18/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:47:09 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '3059/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '3054/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '3056/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '3056/3600' text: 'path=/version=2...']
+		
+		name 'f7a37f76-e36f-4df5-a54d-5b6e588bf725.local.' 
+			[IPv6Address@25538299 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f7a37f76-e36f-4df5-a54d-5b6e588bf725.local. ttl: '18/120' address: '0.0.0.0']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '3059/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '3059/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '3062/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '3062/3600' text: 'path=/version=2...']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '3062/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '70d5b935-881b-467a-a826-5050a0cf1807.local.' 
+			[IPv4Address@15345407 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 70d5b935-881b-467a-a826-5050a0cf1807.local. ttl: '16/120' address: '192.168.0.12']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '3056/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:47:19 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@25538299 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f7a37f76-e36f-4df5-a54d-5b6e588bf725.local. ttl: '8/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:47:19 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '3049/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '3044/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '3046/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '3046/3600' text: 'path=/version=2...']
+		
+		name 'f7a37f76-e36f-4df5-a54d-5b6e588bf725.local.' 
+			[IPv6Address@25538299 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f7a37f76-e36f-4df5-a54d-5b6e588bf725.local. ttl: '8/120' address: '0.0.0.0']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '3049/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '3049/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '3052/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '3052/3600' text: 'path=/version=2...']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '3052/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '70d5b935-881b-467a-a826-5050a0cf1807.local.' 
+			[IPv4Address@15345407 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 70d5b935-881b-467a-a826-5050a0cf1807.local. ttl: '6/120' address: '192.168.0.12']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '3046/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:50:39 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@11973816 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: 18b37603-d639-48f3-8929-6f6899842486.local. ttl: '51/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:50:39 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local.' 
+			[IPv4Address@13928850 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local. ttl: '119/120' address: '192.168.0.12']
+		
+		name 'e5c1e8f8-4920-4582-9dc4-a174ea5e5d6e.local.' 
+			[IPv4Address@31884131 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: e5c1e8f8-4920-4582-9dc4-a174ea5e5d6e.local. ttl: '49/120' address: '192.168.0.12']
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '2849/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '2844/3600' address: '192.168.0.12']
+		
+		name 'f216338a-3913-42d3-9963-a18e64450bb8.local.' 
+			[IPv6Address@6482323 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f216338a-3913-42d3-9963-a18e64450bb8.local. ttl: '47/120' address: '0:0:0:0:0:0:0:0']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2846/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2846/3600' text: 'path=/version=2...']
+		
+		name 'e3251c0c-1466-4f2e-a25b-2db1d90bd8d1.local.' 
+			[IPv4Address@33373774 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: e3251c0c-1466-4f2e-a25b-2db1d90bd8d1.local. ttl: '45/120' address: '0.0.0.0']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2849/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2849/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2852/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2852/3600' text: 'path=/version=2...']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '2852/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '18b37603-d639-48f3-8929-6f6899842486.local.' 
+			[IPv6Address@11973816 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: 18b37603-d639-48f3-8929-6f6899842486.local. ttl: '51/120' address: '0.0.0.0']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '2846/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:50:49 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@11973816 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: 18b37603-d639-48f3-8929-6f6899842486.local. ttl: '41/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:50:49 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local.' 
+			[IPv4Address@13928850 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local. ttl: '109/120' address: '192.168.0.12']
+		
+		name 'e5c1e8f8-4920-4582-9dc4-a174ea5e5d6e.local.' 
+			[IPv4Address@31884131 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: e5c1e8f8-4920-4582-9dc4-a174ea5e5d6e.local. ttl: '39/120' address: '192.168.0.12']
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '2839/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '2834/3600' address: '192.168.0.12']
+		
+		name 'f216338a-3913-42d3-9963-a18e64450bb8.local.' 
+			[IPv6Address@6482323 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f216338a-3913-42d3-9963-a18e64450bb8.local. ttl: '37/120' address: '0:0:0:0:0:0:0:0']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2836/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2836/3600' text: 'path=/version=2...']
+		
+		name 'e3251c0c-1466-4f2e-a25b-2db1d90bd8d1.local.' 
+			[IPv4Address@33373774 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: e3251c0c-1466-4f2e-a25b-2db1d90bd8d1.local. ttl: '35/120' address: '0.0.0.0']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2839/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2839/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2842/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2842/3600' text: 'path=/version=2...']
+		
+		name 'd09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local.' 
+			[IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '111/120' address: '0.0.0.0']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '2842/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '18b37603-d639-48f3-8929-6f6899842486.local.' 
+			[IPv6Address@11973816 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: 18b37603-d639-48f3-8929-6f6899842486.local. ttl: '41/120' address: '0.0.0.0']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '2836/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:50:59 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@11973816 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: 18b37603-d639-48f3-8929-6f6899842486.local. ttl: '31/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:50:59 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local.' 
+			[IPv4Address@13928850 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local. ttl: '99/120' address: '192.168.0.12']
+		
+		name 'e5c1e8f8-4920-4582-9dc4-a174ea5e5d6e.local.' 
+			[IPv4Address@31884131 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: e5c1e8f8-4920-4582-9dc4-a174ea5e5d6e.local. ttl: '29/120' address: '192.168.0.12']
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '2829/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '2824/3600' address: '192.168.0.12']
+		
+		name 'f216338a-3913-42d3-9963-a18e64450bb8.local.' 
+			[IPv6Address@6482323 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f216338a-3913-42d3-9963-a18e64450bb8.local. ttl: '27/120' address: '0:0:0:0:0:0:0:0']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2826/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2826/3600' text: 'path=/version=2...']
+		
+		name 'e3251c0c-1466-4f2e-a25b-2db1d90bd8d1.local.' 
+			[IPv4Address@33373774 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: e3251c0c-1466-4f2e-a25b-2db1d90bd8d1.local. ttl: '25/120' address: '0.0.0.0']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2829/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2829/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2832/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2832/3600' text: 'path=/version=2...']
+		
+		name 'd09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local.' 
+			[IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '101/120' address: '0.0.0.0']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '2832/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '18b37603-d639-48f3-8929-6f6899842486.local.' 
+			[IPv6Address@11973816 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: 18b37603-d639-48f3-8929-6f6899842486.local. ttl: '31/120' address: '0.0.0.0']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '2826/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:51:09 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@11973816 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: 18b37603-d639-48f3-8929-6f6899842486.local. ttl: '21/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:51:09 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local.' 
+			[IPv4Address@13928850 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local. ttl: '89/120' address: '192.168.0.12']
+		
+		name 'e5c1e8f8-4920-4582-9dc4-a174ea5e5d6e.local.' 
+			[IPv4Address@31884131 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: e5c1e8f8-4920-4582-9dc4-a174ea5e5d6e.local. ttl: '19/120' address: '192.168.0.12']
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '2819/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '2814/3600' address: '192.168.0.12']
+		
+		name 'f216338a-3913-42d3-9963-a18e64450bb8.local.' 
+			[IPv6Address@6482323 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f216338a-3913-42d3-9963-a18e64450bb8.local. ttl: '17/120' address: '0:0:0:0:0:0:0:0']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2816/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2816/3600' text: 'path=/version=2...']
+		
+		name 'e3251c0c-1466-4f2e-a25b-2db1d90bd8d1.local.' 
+			[IPv4Address@33373774 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: e3251c0c-1466-4f2e-a25b-2db1d90bd8d1.local. ttl: '15/120' address: '0.0.0.0']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2819/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2819/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2822/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2822/3600' text: 'path=/version=2...']
+		
+		name 'd09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local.' 
+			[IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '91/120' address: '0.0.0.0']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '2822/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '18b37603-d639-48f3-8929-6f6899842486.local.' 
+			[IPv6Address@11973816 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: 18b37603-d639-48f3-8929-6f6899842486.local. ttl: '21/120' address: '0.0.0.0']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '2816/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:51:19 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@11973816 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: 18b37603-d639-48f3-8929-6f6899842486.local. ttl: '11/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:51:19 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local.' 
+			[IPv4Address@13928850 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local. ttl: '79/120' address: '192.168.0.12']
+		
+		name 'e5c1e8f8-4920-4582-9dc4-a174ea5e5d6e.local.' 
+			[IPv4Address@31884131 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: e5c1e8f8-4920-4582-9dc4-a174ea5e5d6e.local. ttl: '9/120' address: '192.168.0.12']
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '2809/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '2804/3600' address: '192.168.0.12']
+		
+		name 'f216338a-3913-42d3-9963-a18e64450bb8.local.' 
+			[IPv6Address@6482323 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: f216338a-3913-42d3-9963-a18e64450bb8.local. ttl: '7/120' address: '0:0:0:0:0:0:0:0']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2806/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2806/3600' text: 'path=/version=2...']
+		
+		name 'e3251c0c-1466-4f2e-a25b-2db1d90bd8d1.local.' 
+			[IPv4Address@33373774 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: e3251c0c-1466-4f2e-a25b-2db1d90bd8d1.local. ttl: '5/120' address: '0.0.0.0']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2809/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2809/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2812/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2812/3600' text: 'path=/version=2...']
+		
+		name 'd09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local.' 
+			[IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '81/120' address: '0.0.0.0']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '2812/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '18b37603-d639-48f3-8929-6f6899842486.local.' 
+			[IPv6Address@11973816 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: 18b37603-d639-48f3-8929-6f6899842486.local. ttl: '11/120' address: '0.0.0.0']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '2806/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:51:29 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@11973816 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: 18b37603-d639-48f3-8929-6f6899842486.local. ttl: '1/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:51:29 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local.' 
+			[IPv4Address@13928850 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local. ttl: '69/120' address: '192.168.0.12']
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '2799/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '2794/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2796/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2796/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2799/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2799/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2802/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2802/3600' text: 'path=/version=2...']
+		
+		name 'd09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local.' 
+			[IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '71/120' address: '0.0.0.0']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '2802/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '18b37603-d639-48f3-8929-6f6899842486.local.' 
+			[IPv6Address@11973816 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: 18b37603-d639-48f3-8929-6f6899842486.local. ttl: '1/120' address: '0.0.0.0']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '2796/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:51:49 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '51/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:51:49 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local.' 
+			[IPv4Address@13928850 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local. ttl: '49/120' address: '192.168.0.12']
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '2779/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '2774/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2776/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2776/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2779/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2779/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2782/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2782/3600' text: 'path=/version=2...']
+		
+		name 'd09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local.' 
+			[IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '51/120' address: '0.0.0.0']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '2782/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '2776/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:51:59 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '41/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:51:59 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local.' 
+			[IPv4Address@13928850 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local. ttl: '39/120' address: '192.168.0.12']
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '2769/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '2764/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2766/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2766/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2769/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2769/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2772/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2772/3600' text: 'path=/version=2...']
+		
+		name 'd09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local.' 
+			[IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '41/120' address: '0.0.0.0']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '2772/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '2766/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:52:09 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '31/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:52:09 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local.' 
+			[IPv4Address@13928850 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local. ttl: '29/120' address: '192.168.0.12']
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '2759/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '2754/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2756/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2756/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2759/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2759/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2762/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2762/3600' text: 'path=/version=2...']
+		
+		name 'd09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local.' 
+			[IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '31/120' address: '0.0.0.0']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '2762/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '2756/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:52:19 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '21/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:52:19 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local.' 
+			[IPv4Address@13928850 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local. ttl: '19/120' address: '192.168.0.12']
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '2749/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '2744/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2746/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2746/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2749/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2749/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2752/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2752/3600' text: 'path=/version=2...']
+		
+		name 'd09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local.' 
+			[IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '21/120' address: '0.0.0.0']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '2752/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '2746/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:52:29 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '11/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:52:29 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local.' 
+			[IPv4Address@13928850 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: 21751da6-33df-4ef7-9d2c-8b3f3b781ad6.local. ttl: '9/120' address: '192.168.0.12']
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '2739/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '2734/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2736/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2736/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2739/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2739/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2742/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2742/3600' text: 'path=/version=2...']
+		
+		name 'd09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local.' 
+			[IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '11/120' address: '0.0.0.0']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '2742/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '2736/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 2:52:39 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: Danila.local..Error while reaping records: [IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '1/120' address: '0.0.0.0']
+java.lang.ClassCastException: java.net.Inet4Address cannot be cast to java.net.Inet6Address
+	at javax.jmdns.impl.DNSRecord$IPv6Address.getServiceInfo(DNSRecord.java:254)
+	at javax.jmdns.impl.DNSRecord.getServiceInfo(DNSRecord.java:938)
+	at javax.jmdns.impl.JmDNSImpl.renewServiceCollector(JmDNSImpl.java:1223)
+	at javax.jmdns.impl.JmDNSImpl.cleanCache(JmDNSImpl.java:1779)
+	at javax.jmdns.impl.tasks.RecordReaper.run(RecordReaper.java:58)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+сен 11, 2019 2:52:39 AM javax.jmdns.impl.JmDNSImpl cleanCache
+SEVERE: 	---- Local Host -----
+	local host info[Danila.local., Realtek RTL8191SU Wireless LAN 802.11n USB 2.0 Network Adapter:192.168.0.12, DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced]
+	---- Services -----
+		Service: jenkins._hudson._tcp.local.: [ServiceInfoImpl@25019787 name: 'jenkins._hudson._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._jenkins._tcp.local.: [ServiceInfoImpl@8341760 name: 'jenkins._jenkins._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+		Service: jenkins._http._tcp.local.: [ServiceInfoImpl@4048834 name: 'Jenkins._http._tcp.local.' address: 'Danila/192.168.0.12:8080 null:8080 ' status: 'DNS: Danila.local. state: announced task: Renewer(Danila.local.) state: announced', has data
+	version: 2.176.3
+	url: http://localhost:8080/
+	server-id: 64afa155e766b9f88b777e6960ba945d
+	path: /
+]
+	---- Types ----
+		Type: _http._tcp.local.: no subtypes
+		Type: _hudson._tcp.local.: no subtypes
+		Type: _jenkins._tcp.local.: no subtypes
+	---- cache ----
+		
+		name '_jenkins._tcp.local.' 
+			[Pointer@23534373 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _jenkins._tcp.local. ttl: '2729/3600' alias: 'jenkins._jenkins._tcp.local.']
+		
+		name 'danila.local.' 
+			[IPv4Address@13618015 type: TYPE_A index 1, class: CLASS_IN index 1-unique, name: Danila.local. ttl: '2724/3600' address: '192.168.0.12']
+		
+		name 'jenkins._hudson._tcp.local.' 
+			[Service@5289551 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2726/3600' server: 'Danila.local.:8080']
+			[Text@6255632 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._hudson._tcp.local. ttl: '2726/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._jenkins._tcp.local.' 
+			[Service@20639437 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2729/3600' server: 'Danila.local.:8080']
+			[Text@30098438 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: jenkins._jenkins._tcp.local. ttl: '2729/3600' text: 'path=/version=2...']
+		
+		name 'jenkins._http._tcp.local.' 
+			[Service@1992894 type: TYPE_SRV index 33, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2732/3600' server: 'Danila.local.:8080']
+			[Text@27551129 type: TYPE_TXT index 16, class: CLASS_IN index 1-unique, name: Jenkins._http._tcp.local. ttl: '2732/3600' text: 'path=/version=2...']
+		
+		name 'd09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local.' 
+			[IPv6Address@8113913 type: TYPE_AAAA index 28, class: CLASS_IN index 1-unique, name: d09313ad-3e5a-46dd-bd3e-ef53c9e5ff0d.local. ttl: '1/120' address: '0.0.0.0']
+		
+		name '_http._tcp.local.' 
+			[Pointer@22716838 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _http._tcp.local. ttl: '2732/3600' alias: 'Jenkins._http._tcp.local.']
+		
+		name '_hudson._tcp.local.' 
+			[Pointer@24442500 type: TYPE_PTR index 12, class: CLASS_IN index 1, name: _hudson._tcp.local. ttl: '2726/3600' alias: 'jenkins._hudson._tcp.local.']
+	---- Service Collectors ----
+	---- Service Listeners ----
+сен 11, 2019 3:02:20 AM hudson.model.Run execute
+INFO: helloci-jenkins #5 main build action completed: FAILURE
+сен 11, 2019 3:07:09 AM hudson.model.Run execute
+INFO: helloci-jenkins #6 main build action completed: FAILURE
