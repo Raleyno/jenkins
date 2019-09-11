@@ -22,12 +22,12 @@
   </scm>
   <assignedNode>Danila</assignedNode>
   <canRoam>false</canRoam>
-  <disabled>false</disabled>
+  <disabled>true</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>H/5 * * * 1-5</spec>
+      <spec>0 0 * * 1-5</spec>
     </hudson.triggers.TimerTrigger>
     <hudson.triggers.SCMTrigger>
       <spec>H/5 * * * *</spec>

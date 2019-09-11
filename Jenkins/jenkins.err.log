@@ -5778,3 +5778,5 @@ WARNING: Attempt to (de-)serialize anonymous class org.jenkinsci.plugins.gitclie
 WARNING: Attempt to (de-)serialize anonymous class org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1 in file:/E:/data/Jenkins/plugins/git-client/WEB-INF/lib/git-client.jar; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
 сен 11, 2019 10:35:51 PM hudson.model.Run execute
 INFO: Helloci-slave #1 main build action completed: FAILURE
+сен 11, 2019 10:45:12 PM hudson.model.Run execute
+INFO: Helloci-slave #2 main build action completed: FAILURE
