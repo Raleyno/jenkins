@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-09-11 01:24:34.206 UTC</timestamp>
+  <original>
+    <name>helloci-jenkins</name>
+    <number>7</number>
+  </original>
+  <md5sum>bbb7e3f5cc1e60d4c41bd57d5ab03b5e</md5sum>
+  <fileName>com.github.vitalliuss.helloci.AppTest.txt</fileName>
+  <usages>
+    <entry>
+      <string>helloci-jenkins</string>
+      <ranges>7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
