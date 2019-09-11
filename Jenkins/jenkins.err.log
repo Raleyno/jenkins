@@ -5780,3 +5780,5 @@ WARNING: Attempt to (de-)serialize anonymous class org.jenkinsci.plugins.gitclie
 INFO: Helloci-slave #1 main build action completed: FAILURE
 сен 11, 2019 10:45:12 PM hudson.model.Run execute
 INFO: Helloci-slave #2 main build action completed: FAILURE
+сен 11, 2019 10:50:11 PM hudson.model.Run execute
+INFO: Helloci-slave #3 main build action completed: FAILURE
