@@ -106,3 +106,12 @@ WMI.WmiException: ServiceAlreadyRunning
 2019-09-11 20:46:02,657 INFO  - Started process 2684
 2019-09-11 20:46:02,657 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
 2019-09-11 20:46:02,673 INFO  - Recording PID of the started process:2684. PID file destination is E:\data\Jenkins\jenkins.pid
+2019-09-12 12:21:25,166 INFO  - Starting ServiceWrapper in the service mode
+2019-09-12 12:21:28,499 INFO  - Starting E:\data\Jenkins\jre\bin\java -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "E:\data\Jenkins\jenkins.war" --httpPort=8081 --webroot="E:\data\Jenkins\war"
+2019-09-12 12:21:28,509 INFO  - Extension loaded: killOnStartup
+2019-09-12 12:21:28,515 DEBUG - Checking the potentially runaway process with PID=2684
+2019-09-12 12:21:29,590 DEBUG - No runaway process with PID=2684. The process has been already stopped.
+2019-09-12 12:21:29,591 INFO  - Starting E:\data\Jenkins\jre\bin\java -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "E:\data\Jenkins\jenkins.war" --httpPort=8081 --webroot="E:\data\Jenkins\war"
+2019-09-12 12:21:30,101 INFO  - Started process 2424
+2019-09-12 12:21:30,105 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2019-09-12 12:21:30,155 INFO  - Recording PID of the started process:2424. PID file destination is E:\data\Jenkins\jenkins.pid

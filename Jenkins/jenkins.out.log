@@ -15,3 +15,5 @@ Jenkins home directory: E:\data\Jenkins found at: EnvVars.masterEnvVars.get("JEN
 [09/11/19 21:12:06] SSH Launch of Danila on localhost failed in 161 269 ms
 [09/11/19 21:14:47] SSH Launch of Danila on localhost failed in 161 106 ms
 [09/11/19 21:17:54] SSH Launch of Danila on localhost failed in 161 062 ms
+Running from: E:\data\Jenkins\jenkins.war
+Jenkins home directory: E:\data\Jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")

@@ -6052,3 +6052,116 @@ INFO: cobertura #2 main build action completed: FAILURE
 INFO: cobertura #3 main build action completed: SUCCESS
 сен 12, 2019 3:51:42 AM hudson.model.Run execute
 INFO: cobertura #4 main build action completed: SUCCESS
+сен 12, 2019 4:42:12 AM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Fingerprint cleanup
+сен 12, 2019 4:42:12 AM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Fingerprint cleanup. 317 ms
+сен 12, 2019 12:21:35 PM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @4530ms to org.eclipse.jetty.util.log.JavaUtilLog
+сен 12, 2019 12:21:35 PM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+сен 12, 2019 12:21:36 PM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+WARNING: Empty contextPath
+сен 12, 2019 12:21:36 PM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.4.z-SNAPSHOT; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 1.8.0_144-b01
+сен 12, 2019 12:21:39 PM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+сен 12, 2019 12:21:40 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: DefaultSessionIdManager workerName=node0
+сен 12, 2019 12:21:40 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: No SessionScavenger set, using defaults
+сен 12, 2019 12:21:40 PM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+INFO: node0 Scavenging every 600000ms
+сен 12, 2019 12:21:44 PM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started w.@289886{Jenkins v2.176.3,/,file:///E:/data/Jenkins/war/,AVAILABLE}{E:\data\Jenkins\war}
+сен 12, 2019 12:21:44 PM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@19edf14{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+сен 12, 2019 12:21:44 PM org.eclipse.jetty.server.Server doStart
+INFO: Started @14069ms
+сен 12, 2019 12:21:44 PM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v4.0 running: controlPort=disabled
+сен 12, 2019 12:21:50 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+сен 12, 2019 12:22:10 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+сен 12, 2019 12:22:34 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+сен 12, 2019 12:22:34 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+сен 12, 2019 12:22:43 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+сен 12, 2019 12:22:45 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+сен 12, 2019 12:22:45 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Download metadata
+сен 12, 2019 12:22:46 PM hudson.util.Retrier start
+INFO: Attempt #1 to do the action check updates server
+сен 12, 2019 12:22:47 PM hudson.util.Retrier start
+INFO: The attempt #1 to do the action check updates server failed with an allowed exception:
+java.net.UnknownHostException: updates.jenkins.io
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at hudson.model.DownloadService.loadJSON(DownloadService.java:167)
+	at hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:189)
+	at hudson.PluginManager.checkUpdatesServer(PluginManager.java:1769)
+	at hudson.util.Retrier.start(Retrier.java:62)
+	at hudson.PluginManager.doCheckUpdatesServer(PluginManager.java:1740)
+	at jenkins.model.DownloadSettings$DailyCheck.execute(DownloadSettings.java:130)
+	at hudson.model.AsyncPeriodicWork$1.run(AsyncPeriodicWork.java:101)
+	at java.lang.Thread.run(Unknown Source)
+
+сен 12, 2019 12:22:47 PM hudson.util.Retrier start
+INFO: Calling the listener of the allowed exception 'updates.jenkins.io' at the attempt #1 to do the action check updates server
+сен 12, 2019 12:22:47 PM hudson.util.Retrier start
+INFO: Attempted the action check updates server for 1 time(s) with no success
+сен 12, 2019 12:22:47 PM hudson.PluginManager doCheckUpdatesServer
+SEVERE: Error checking update sites for 1 attempt(s). Last exception was: UnknownHostException: updates.jenkins.io
+сен 12, 2019 12:22:47 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Download metadata. 2 059 ms
+сен 12, 2019 12:22:50 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@c96879: display name [Root WebApplicationContext]; startup date [Thu Sep 12 12:22:50 GMT+03:00 2019]; root of context hierarchy
+сен 12, 2019 12:22:50 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@c96879]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1cb11cb
+сен 12, 2019 12:22:50 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1cb11cb: defining beans [authenticationManager]; root of factory hierarchy
+сен 12, 2019 12:22:51 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@1531ae3: display name [Root WebApplicationContext]; startup date [Thu Sep 12 12:22:51 GMT+03:00 2019]; root of context hierarchy
+сен 12, 2019 12:22:51 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@1531ae3]: org.springframework.beans.factory.support.DefaultListableBeanFactory@197144e
+сен 12, 2019 12:22:51 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@197144e: defining beans [filter,legacy]; root of factory hierarchy
+сен 12, 2019 12:22:52 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+сен 12, 2019 12:22:56 PM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running
+сен 12, 2019 12:22:57 PM javax.jmdns.impl.HostInfo newHostInfo
+WARNING: Could not find any address beside the loopback.
+сен 12, 2019 12:24:58 PM org.kohsuke.stapler.LocaleDrivenResourceProvider getLocaleDrivenResourceProviders
+INFO: Registered LocaleDrivenResourceProvider: jenkins.MetaLocaleDrivenResourceProvider@7c400f
+сен 12, 2019 2:31:46 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Workspace clean-up
+сен 12, 2019 2:31:49 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Workspace clean-up. 1 999 ms
+сен 12, 2019 6:23:09 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started telemetry collection
+сен 12, 2019 6:23:10 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished telemetry collection. 1 544 ms
+сен 13, 2019 12:00:09 AM org.jvnet.hudson.plugins.thinbackup.backup.HudsonBackup backupJobsDirectory
+INFO: Found 4 jobs to back up.
+сен 13, 2019 1:30:04 AM org.jvnet.hudson.plugins.thinbackup.backup.HudsonBackup backupJobsDirectory
+INFO: Found 4 jobs to back up.
